@@ -129,7 +129,7 @@ const Checkout = ({ cart, addToCart, removeFromCart, clearCart, subTotal }) => {
             </div>
 
             <h2 className="font-bold text-xl">2. Review Cart</h2>
-            <div className="bg-orange-200 p-1">
+            <div className="bg-slate-100 p-1 pb-4 ">
                 <ol className="mt-5">
                     {Object.keys(cart).length == 0 && (
                         <div className="my-3 text-center font-normal">
@@ -175,7 +175,7 @@ const Checkout = ({ cart, addToCart, removeFromCart, clearCart, subTotal }) => {
             </div>
             <Link href={"/checkout"}>
                 <button className="flex mx-auto my-2 text-white bg-orange-400 border-0 py-1 px-4 focus:outline-none hover:bg-orange-300 rounded">
-                    Pay
+                    Pay ₹{subTotal}
                 </button>
             </Link>
         </div>
